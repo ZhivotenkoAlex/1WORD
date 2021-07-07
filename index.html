@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1WOR&D</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <p class="header__logo">Hire Me</p>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <aside class="aside">
+          <form class="form" id="form">
+            <fieldset class="form__fieldset" id="addNewUser">
+              <legend class="form__legend">Add new user</legend>
+              <label class="form__textLabel" for=""
+                ><input
+                  type="text"
+                  placeholder="Name"
+                  id="newName"
+                  class="form__textInput"
+              /></label>
+              <label class="form__textLabel" for=""
+                ><input
+                  type="text"
+                  placeholder="Username"
+                  id="newUserName"
+                  class="form__textInput"
+              /></label>
+              <label class="form__textLabel" for="">
+                <input
+                  type="text"
+                  placeholder="Email"
+                  id="newEmail"
+                  class="form__textInput"
+              /></label>
+              <label class="form__textLabel" for="">
+                <input
+                  type="text"
+                  placeholder="Website"
+                  id="newWebsite"
+                  class="form__textInput"
+              /></label>
+              <button type="submit" class="catalog__button" id="modal-btn">
+                Add user
+              </button>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Sort by:</legend>
+              <label for=""
+                ><input
+                  type="radio"
+                  name="filter"
+                  id="filter-name"
+                  class="form__radio"
+                />Name</label
+              >
+              <label for="">
+                <input
+                  type="radio"
+                  name="filter"
+                  id="filter-username"
+                  class="form__radio"
+                />Username</label
+              >
+              <label for="">
+                <input
+                  type="radio"
+                  name="filter"
+                  id="filter-email"
+                  class="form__radio"
+                />Email</label
+              >
+              <label for="">
+                <input
+                  type="radio"
+                  name="filter"
+                  id="filter-website"
+                  class="form__radio"
+                />Website</label
+              >
+            </fieldset>
+          </form>
+        </aside>
+        <div class="catalog" id="userList"></div>
+      </section>
+    </main>
+    <footer></footer>
+    <div class="details">
+      <div class="details__overlay"></div>
+    </div>
+    <script src="./getUsers.js"></script>
+    <script src="./postUser.js"></script>
+  </body>
+</html>
